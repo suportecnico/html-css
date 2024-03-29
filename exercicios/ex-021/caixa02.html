@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F2E7DC;
+            margin: 0px;
+        }
+        
+        /* Cabeçalho */
+        header {
+            background-color:#A9D9D0;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        header > h1 {
+            background-color: #027373;
+            color: #0D0D0D;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.863);
+        }
+        nav {
+            background-color:#038C7F;
+        }
+        nav > a {
+            color: #0D0D0D;
+            text-decoration: none;  
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            color: red;
+        }
+
+        /* Conteúdo principal */
+        main {
+            background-color: #A9D9D0;
+            padding: 10px;
+            margin: 10px;
+        }
+        section {
+            background-color: #038c7e1f;
+        }
+        article > h2 {
+            background-color: #027373;
+            text-align: center;
+            box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.863);
+        }
+        article > aside {
+            background-color: #038c7eb6;
+        }
+        aside > p {
+            text-align: right;
+            padding: 1px;
+        }
+        article > p {
+            text-align: justify;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #0D0D0D;
+            color: white;
+            text-align: center;
+            padding: 3px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+
+        
+        #cftv {
+            height: 100px;
+            width: 100px;
+            margin: 10px auto 10px auto;
+            background-color:#0D0D0D;
+            border-radius: 50%;
+            
+        }
+        #cftv > h1 {
+            color: red;
+            margin: 0px;
+            text-align: center;
+            font-size: 1.5em;
+            padding-top: 35px;
+        }
+
+    </style>
+</head>
+<body>
+    <header> <!-- Cabeçalho -->
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section>
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis minus modi perferendis consequatur. Possimus dicta aut iusto. Ipsum, expedita esse. Tenetur modi aliquid magni asperiores dignissimos quos cumque aperiam voluptas.</p>
+                <aside>
+                    <p>Artigo escrito por José Campos</p>
+                </aside>
+            </article>
+            <article>
+                <!-- Aqui pode colocar mais conteúdo -->
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Filisberto Campos</p>
+    </footer>
+
+    <div id="cftv">
+        <!-- div de exemplo como fazer uma círculo  -->
+        <h1>CFTV</h1>
+    </div>
+</body>
+</html>

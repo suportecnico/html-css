@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 { /* Elemento tipo box-level */
+            background-color: chocolate;
+            
+            /* O height (altura) e width (largura) definem o box-size (tamanho da caixa)*/
+            height: 300px;
+            width: 300px;
+            /* Abaixo teremos 3 formas de escrever o padding. 1° escrevendo todos os tamanhos do elemento, começando por cima-direita-baixo-esquerda.
+
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+
+            2° Escrevemos apenas os valores sem descrever diretamente as direções, o primeiro aplica-se à top, o segundo à right, o terceiro à bottom e o último à left:
+
+            padding: 5px 5px 5px 5px;
+            
+            3° Escrevemos apenas dois valores sem descrever diretamente as direções, o primeiro aplica-se à top-bottom e o segundo à right-left: 
+
+            padding: 5px 10px;
+            
+            4° Escrevemos apenas um valor sem descrever diretamente as direções, o que se aplica a todos os lados do elemento:
+
+            padding: 5px;
+
+            */
+            padding: 5px;
+
+            /* O border já está escrito na forma de shorthand, pois a forma padrão seria, 
+            border: width (largura) 
+            border: style (estilo)
+            border: color (cor)
+            */
+            border: 8px solid black;
+
+            /* O mesmo principio de shorthand, visto acima para borda, também aplica-se à margin.
+            Abaixo já está na forma de shorthand (abreviada)
+            */
+            margin: 10px auto;
+        }
+
+        p {
+            background-color: coral;
+            padding: 5px;
+            border: 8px solid black;
+            margin: 10px;
+            
+        }
+
+        a { /* Elemento tipo inline-level */
+            background-color: black;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="@">links são exemplos de caixas inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

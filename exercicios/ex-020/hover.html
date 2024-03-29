@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        div > p, img {
+            display: none; /* aqui o conteúdo de p ficará escondido */
+        }
+
+        div:hover > p {
+            display:block; /* aqui o conteúdo de p ficará visível com o mouse em cima */
+            background-color: blue;
+            color: white;
+            width: 300px;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        div:hover > img {
+            display: block;
+            
+        }
+        
+
+        /* div > p {
+            Esse seletor de pseudo-classe > indica que o p que estiver dentro da div sofrerá alterações conforme a configuração.
+        } */
+
+        div:hover {
+        color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo!</p>
+    <div>
+        Passe o mouse aqui!
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit totam sed eos praesentium repellendus culpa, nobis beatae consequatur quasi ad quisquam earum neque eligendi reprehenderit nihil vel laborum inventore aliquid!</p> <br>
+        <img src="logo-html-200.png" alt="">
+    </div>
+</body>
+</html>

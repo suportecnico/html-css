@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mídias em HTML5</title>
+</head>
+<body>
+  <h1>Imagem dinâmica</h1>
+  <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+  <picture>
+    <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+    <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="">
+  </picture>
+
+ <h1>Reproduzir Áudio</h1>
+  <p>Vamos aprender a reproduzir áudios em Html5.</p>
+  <audio src="midia/guanacast-33.mp3" autoplay controls></audio>
+
+  <br>
+  
+  <audio preload="auto" autoplay controls loop> <!--OBS essa tag com estes atributos não funcionaram no meu navegador-->
+    <!--preload (auto, considera que o site carregou depois que o arquivo carregar todo, nesse caso é ruim, pois arquivos de áudios são pesados); (metadata, vai carregar só algumas informações do arquivo, depois de dar play, o arquivo inicia o download) e o (none não carrega nada)-->
+    <!--O loop recomeça o áudio quando ele termina-->
+    <source src="/midia/guanacast-33.mp3" type="audio/mpeg">
+    <source src="" type="audio/ogg">
+    <source src="" type="audio/wav">
+    <p>Desculpe</p>
+  </audio>
+  <!--Para selecionar varios modelos de arquivos, no caso de termos um arquivo não compatível com o navegador, usamos a tag audio com o atributo <source src="" type="audio/"> , expecificaando na sequência todos os arquivos que serão carregados, no caso da não compatibilidade.-->
+  <!--Exemplos de arquivos MP3 OGG WAV-->
+
+</body>
+</html>

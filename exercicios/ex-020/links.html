@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*
+            SELETORES PERSONALIZADOS 
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children (filho)
+        */
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: darkgreen;
+            text-decoration: none;
+        } /* Aqui os parâmetros do link visitado ou não vão ser de forma genérica conforme as configurações do elemento*/ 
+
+        /* Abaixo pseudo-class*/
+        a:visited {
+            color: red;
+        } /* Aqui depois que o link for visitado, ele sofrerá alterações, conforme for configurado*/
+
+        a:hover {
+            text-decoration: underline;
+            color:blue;
+        } /* Aqui com essa configuração ao passar o mouse por cima do link, muda a cor e aparece a barra em baixo*/
+
+        a:active {
+            color: yellow;
+        } /* Aqui muda a cor do link enquanto estiver precionado*/
+
+        /* Abaixo pseudo-elements*/
+
+        a::after {
+            content: ' link';
+            /* content: ; é conteudo */
+            text-decoration: none;
+            color: lightgray;
+            font-weight: normal;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/suportecnico/manutencao.git">Repositório do GitHub</a></li>
+        <li><a href="https://www.youtube.com">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/">Site do Curso</a></li>
+        <li><a href="www.hotmail.com">Teste hotmail</a></li>
+    </ul>
+</body>
+</html>
