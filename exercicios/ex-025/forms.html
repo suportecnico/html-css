@@ -12,13 +12,17 @@
 </head>
 <body>
     <h1>Meu Primeiro Formulário</h1>
-    <form>
-        <label for="">Nome</label>
-        <input type="text" name="nome" id="nome">
+    <form action="cadastro.php" method="POST" autocomplete="off">
+        
+        <label for="inome">Nome</label>
+        <input type="text" name="nome" id="inome">
+        <!-- É mais útil para php e html -->
+         <!-- O id é mais útil para javaScript -->
         <br>
         <!-- Caixa de texto do nome -->
-        <label for="">Sobrenome</label>
-        <input type="text" name="sabrenome" id="sobrenome">
+        <label for="isobrenome">Sobrenome</label>
+        <!-- O for do label, diz para quem o nome está direcionado, portanto usa-se os IDs dos inputs para linkar o texto do label ao elemento do imput -->
+        <input type="text" name="sobrenome" id="isobrenome">
         <br>
         <!-- Caixa de texto do sobrenome -->
         <label for=""><input type="submit" value="Enviar"></label>
