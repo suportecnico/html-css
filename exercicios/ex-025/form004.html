@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="iemail">Email</label> 
+            <input type="email" name="email" id="iemail" autocomplete="email">
+        </p>
+        <p>
+            <!-- criando label para adicionar um número de telefone -->
+             <label for="itel">Telefone</label>
+             <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" required>
+
+             <!-- Estudar sobre expreções regulares, que usamos no exemplo acima, pattern="^\(\d{2}\)\d{4,5}-\d{4,5}$" para configurar o input onde iremos inseriri o número de telefone -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+        <!-- o fieldset agrupa itens  -->
+    </form>
+</body>
+
+</html>
