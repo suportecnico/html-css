@@ -1,3 +1,88 @@
 @charset "UTF-8";
 
 /* todas as demais mideas */
+ 
+/* Typical Device Breackpoint 
+-----------------------------
+Pequenas telas: até 600px;
+Celular: de 600px até 768px;
+Tablet: 769px - 1024px ;
+Descktop: 1025px - 1200px;
+Grandes telas: acima de 1201px;
+------------------------------
+*/
+
+
+@media print {
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    body {
+        background-image: url(../imagens/back-print.jpg);
+    
+        
+    }
+
+    main {
+        border: 2px solid black;
+        text-align: center;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+        content: "Site desenvolvido por Filisberto Campos";
+        text-decoration: overline;
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) { /* Tablets */
+
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) { /* Descktops */
+
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: block;}
+    img#tv{display: none;}
+}
+
+@media screen and (min-width: 1201px) { /* Telas grandes */
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: block;}
+    
+}
