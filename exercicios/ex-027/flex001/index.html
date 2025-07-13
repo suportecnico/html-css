@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        /* Nas flex box, apenas os container (pais) levam as configurações base. ou seja, display: flex; */
+
+        div.container {
+            background-color: blanchedalmond;
+
+            display: flex;
+            /* Com o display flex o container adapta o conteudo (caixas) de acordo com a tela */
+        }
+
+        div.item {
+            background-color: aqua;
+            border: 1px solid black;
+
+            flex: auto;
+            /* Com a item flexível ele também vai se adaptar ao container */
+        }
+
+        /* Assim como a água dentro de um recepiente */
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">a</div>
+        <div class="item">b</div>
+        <div class="item">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item">f</div>
+        <div class="item">g</div>
+        <div class="item">h</div>
+
+    </div>
+</body>
+</html>
